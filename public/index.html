@@ -56,17 +56,21 @@
       <div id="main-cont">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.925746841001!2d-37.09926362583723!3d-10.893247721495547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab2c2575ccbab%3A0x3affe72265ee3b54!2sR.%20Marqu%C3%AAs%20Leite%20Silva%20-%20Bugio%2C%20Aracaju%20-%20SE%2C%2049090-360!5e0!3m2!1spt-BR!2sbr!4v1731034071158!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div id="cardCont">
-          <form action="">
+          <form 
+          id="formClient"
+          action="https://formspree.io/f/mrbgqdnl"
+          method="POST"
+          >
             <label for="name">Nome <br>
-              <input type="text" id="name" name="name">
+              <input type="text" id="Formname" name="name" required> <div class="check"></div>
             </label>
             
             <label for="email">E-mail <br>
-              <input type="email" id="email" name="email">
+              <input type="email" id="Formemail" name="email" required>
             </label>
             
             <label for="message">Mensagem <br>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="Formmessage" name="message" required></textarea >
             </label>
             <br>
             <input type="submit" value="Enviar">

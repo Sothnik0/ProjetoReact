@@ -57,6 +57,7 @@ skills.render(
       stardom='★ ★ ★ ☆ ☆'
     />
   </React.StrictMode>
-)
+);
+
 
 reportWebVitals();
